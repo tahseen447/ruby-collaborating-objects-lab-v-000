@@ -13,6 +13,7 @@ class Artist
   end
 
   def self.all
+    puts @@all.size
     @@all
   end
 
