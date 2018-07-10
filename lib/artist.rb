@@ -26,7 +26,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    new_song = self.songs.find {|song| song.artist = self}
+    new_song = Song.all.find {|song| song.artist = self}
     if new_song == nil
       new_song = Song.new(name)
       new_song.artist = self
