@@ -13,5 +13,5 @@ class Song
     song.title = filename.split(" - ")[1]
     song
   end
-  
+
 end
