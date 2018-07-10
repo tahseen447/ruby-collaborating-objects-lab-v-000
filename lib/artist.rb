@@ -8,7 +8,7 @@ class Artist
   end
 
   def save
-    self.class.all << self
+  #  self.class.all << self
   end
 
   def add_song(song)
@@ -16,7 +16,7 @@ class Artist
   end
 
   def songs
-    Songs.all.select {|song| song.artist = self}
+#    Songs.all.select {|song| song.artist = self}
   end
 
   def print_songs
