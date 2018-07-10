@@ -32,6 +32,7 @@ class Artist
       new_artist = self.new(name)
     end
     new_artist.save
+    binding.pry
     new_artist
   end
 
