@@ -10,5 +10,6 @@ class Song
 
   def self.new_by_filename(name)
     new_song = Song.new(name)
+    @@all << new_song
   end
 end
