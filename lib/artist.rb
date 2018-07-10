@@ -20,6 +20,6 @@ class Artist
   end
 
   def print_songs
-    Song.all. inspect
+    Song.all.inspect
   end
 end
