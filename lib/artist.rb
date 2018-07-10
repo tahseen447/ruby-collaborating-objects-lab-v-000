@@ -27,6 +27,11 @@ class Artist
 
   def self.find_or_create_by_name(name)
     new_song = @songs.find{|song| song.artist = self}
+    if new_song == nil
+      new_song = Song.new(name)
+      new_song.artist = self
+    end
+    new_song
   end
 
   def print_songs
