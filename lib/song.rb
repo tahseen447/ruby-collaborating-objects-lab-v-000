@@ -15,6 +15,4 @@ class Song
     new_song
   end
 
-  def print_songs
-  end
 end
