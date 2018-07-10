@@ -13,7 +13,6 @@ class Artist
   end
 
   def songs
-    puts "#{@songs.inspect}"
     @songs
   end
 
