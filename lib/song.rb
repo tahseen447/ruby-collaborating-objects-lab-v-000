@@ -14,4 +14,7 @@ class Song
     new_song.artist.name = filename.split(" - ")[0]
     new_song
   end
+
+  def print_songs
+  end
 end
