@@ -15,4 +15,7 @@ class Song
     new_song
   end
 
+  def all
+    @@all
+  end
 end
