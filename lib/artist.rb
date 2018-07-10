@@ -26,7 +26,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    @songs.find{|song| song.artist = self}
+    new_song = @songs.find{|song| song.artist = self}
   end
 
   def print_songs
