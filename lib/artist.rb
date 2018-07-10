@@ -13,6 +13,5 @@ class Artist
   end
 
   def songs
-    @songs.inspect
   end
 end
