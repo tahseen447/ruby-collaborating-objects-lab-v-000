@@ -10,7 +10,7 @@ class Song
 
   def self.new_by_filename(filename)
     new_song = self.new(filename.split(" - ")[1])
-    puts Artist.find_or_create_by_name(filename.split(" - ")[0]).name
+    new_song.artist =  Artist.find_or_create_by_name(filename.split(" - ")[0])
   end
 
   def self.all
